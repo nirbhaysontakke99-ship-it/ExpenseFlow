@@ -24,15 +24,12 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({
       className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white p-6 cursor-pointer select-none animate-in fade-in duration-300"
     >
       <div className="flex flex-col items-center gap-4 text-center">
-        {/* Brand Badge */}
-        <div className="relative">
-          <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-700 flex items-center justify-center text-white shadow-xl shadow-emerald-600/30 border border-emerald-400/30 animate-in zoom-in-90 duration-500">
-            <span className="font-extrabold text-3xl tracking-tighter">EF</span>
-          </div>
-          <div className="absolute -top-1 -right-1 p-1 bg-amber-400 rounded-full text-slate-950 shadow-md">
-            <Sparkles className="w-3.5 h-3.5 fill-slate-950" />
-          </div>
-        </div>
+      {/* ExpenseFlow Logo */}
+      <img
+        src="/expenseflow-icon.png"
+        alt="ExpenseFlow"
+        className="w-20 h-20 rounded-3xl object-cover"
+      />
 
         {/* Brand Name & Tagline */}
         <div className="space-y-1">
